@@ -251,7 +251,7 @@ const LayoutSlug = props => {
         className={`w-full ${fullWidth ? '' : 'lg:max-w-3xl 2xl:max-w-4xl'}`}>
         {/* 文章主体 */}
         <div
-          className={`${fullWidth ? '' : '-mt-32'} transition-all duration-300 rounded-md mx-3 lg:border lg:rounded-xl lg:py-4 bg-white dark:bg-hexo-black-gray  dark:border-black`}>
+          className={`${fullWidth ? '' : '-mt-32 mb-4'} transition-all duration-300 rounded-md mx-3 lg:border lg:rounded-xl lg:py-4 bg-white dark:bg-hexo-black-gray  dark:border-black`}>
           {lock && <ArticleLock validPassword={validPassword} />}
 
           {!lock && post && (
