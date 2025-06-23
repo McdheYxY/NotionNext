@@ -103,7 +103,7 @@ const LayoutBase = props => {
 
           <div
             id='container-inner'
-            className={`px-3 w-full min-h-fit ${fullWidth ? '' : 'max-w-6xl'} mx-auto lg:flex lg:space-x-4 justify-center relative z-10`}>
+            className={`w-full min-h-fit ${fullWidth ? '' : 'max-w-6xl'} mx-auto lg:flex lg:space-x-4 justify-center relative z-10`}>
             {children}
           </div>
         </main>
@@ -354,7 +354,7 @@ const LayoutCategoryIndex = props => {
   const { categoryOptions } = props
 
   return (
-    <div id='inner-wrapper' className='w-full'>
+    <div id='inner-wrapper' className='px-3 w-full'>
       <div className='drop-shadow-xl mt-8 rounded-md px-5 lg:border lg:rounded-xl lg:px-2 lg:py-4 bg-white dark:bg-hexo-black-gray  dark:border-black dark:text-gray-300'>
         <div className='flex justify-center flex-wrap'>
           {categoryOptions?.map(e => {
@@ -385,7 +385,7 @@ const LayoutTagIndex = props => {
   const { tagOptions } = props
   const { locale } = useGlobal()
   return (
-    <div id='inner-wrapper' className='w-full drop-shadow-xl'>
+    <div id='inner-wrapper' className='px-3 w-full drop-shadow-xl'>
       <div className='mt-8 rounded-md px-5 lg:border lg:rounded-xl lg:px-2 lg:py-4 bg-white dark:bg-hexo-black-gray dark:border-black'>
         <div className='dark:text-gray-200 py-5 text-center  text-2xl'>
           <i className='fas fa-tags' /> {locale.COMMON.TAGS}
