@@ -26,7 +26,7 @@ export default function BlogListBar(props) {
 
     )
   } else if (tag) {
-    return <div className="drop-shadow-xl mt-14 lg:mt-6 rounded-md mx-3 px-5 lg:border lg:rounded-xl lg:px-2 lg:py-4 bg-white dark:bg-hexo-black-gray  dark:border-black">
+    return <div className="drop-shadow-xl mt-14 lg:mt-6 rounded-md px-5 lg:border lg:rounded-xl lg:px-2 lg:py-4 bg-white dark:bg-hexo-black-gray  dark:border-black">
             <div className="dark:text-gray-200 py-5 text-center  text-2xl">
                 <i className="fas fa-tags" />  {locale.COMMON.TAGS}
             </div>
