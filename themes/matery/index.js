@@ -354,8 +354,8 @@ const LayoutCategoryIndex = props => {
   const { categoryOptions } = props
 
   return (
-    <div id='inner-wrapper' className=''>
-      <div className='drop-shadow-xl mt-8 rounded-md mx-3 px-5 lg:border lg:rounded-xl lg:px-2 lg:py-4 bg-white dark:bg-hexo-black-gray  dark:border-black dark:text-gray-300'>
+    <div id='inner-wrapper' className='w-full'>
+      <div className='drop-shadow-xl mt-8 rounded-md px-5 lg:border lg:rounded-xl lg:px-2 lg:py-4 bg-white dark:bg-hexo-black-gray  dark:border-black dark:text-gray-300'>
         <div className='flex justify-center flex-wrap'>
           {categoryOptions?.map(e => {
             return (
@@ -385,8 +385,8 @@ const LayoutTagIndex = props => {
   const { tagOptions } = props
   const { locale } = useGlobal()
   return (
-    <div id='inner-wrapper' className='drop-shadow-xl'>
-      <div className='mt-8 rounded-md mx-3 px-5 lg:border lg:rounded-xl lg:px-2 lg:py-4 bg-white dark:bg-hexo-black-gray dark:border-black'>
+    <div id='inner-wrapper' className='w-full drop-shadow-xl'>
+      <div className='mt-8 rounded-md px-5 lg:border lg:rounded-xl lg:px-2 lg:py-4 bg-white dark:bg-hexo-black-gray dark:border-black'>
         <div className='dark:text-gray-200 py-5 text-center  text-2xl'>
           <i className='fas fa-tags' /> {locale.COMMON.TAGS}
         </div>
