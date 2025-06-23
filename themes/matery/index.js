@@ -103,7 +103,7 @@ const LayoutBase = props => {
 
           <div
             id='container-inner'
-            className={`w-full min-h-fit ${fullWidth ? '' : 'max-w-6xl'} mx-auto lg:flex lg:space-x-4 justify-center relative z-10`}>
+            className={`px-3 w-full min-h-fit ${fullWidth ? '' : 'max-w-6xl'} mx-auto lg:flex lg:space-x-4 justify-center relative z-10`}>
             {children}
           </div>
         </main>
