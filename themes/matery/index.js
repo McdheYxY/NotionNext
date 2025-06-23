@@ -277,8 +277,8 @@ const LayoutSlug = props => {
                     <AdSlot />
                   </section>
 
-                  {/* 分享 */}
-                  <ShareBar post={post} />
+                  {/* 分享<ShareBar post={post} /> */}
+                  
 
                   {/* 版权说明 */}
                   {post?.type === 'Post' && <ArticleCopyright {...props} />}
